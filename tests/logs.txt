@@ -7,3 +7,9 @@ Test Successful: Flask App running as expected.
 
 12/11/2019 17:28:16
 Test Successful: Flask App running as expected.
+
+12/11/2019 23:01:49
+Error: Flask App not running as expected.
+
+12/11/2019 23:02:09
+Test Successful: Flask App running as expected.
