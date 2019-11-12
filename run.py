@@ -7,12 +7,10 @@ from flask import Flask         # for serving web app
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return "<title>House Prices</title>"
+def house_prices():
+    """Returns a minimal example."""
+    return "<title>House Prices</title> Houses cost money."
 
-def run():
-    app.run()
-    
 if __name__=='__main__':
-    run()
+    app.run()
     
