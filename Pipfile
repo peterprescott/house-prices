@@ -7,9 +7,10 @@ verify_ssl = true
 
 [packages]
 flask = "*"
-pytest = "*"
 selenium = "*"
 sphinx = "*"
+pylint = "*"
+graphviz = "*"
 
 [requires]
 python_version = "3.7"
