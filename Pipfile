@@ -11,6 +11,7 @@ selenium = "*"
 sphinx = "*"
 pylint = "*"
 graphviz = "*"
+m2r = "*"
 
 [requires]
 python_version = "3.7"
