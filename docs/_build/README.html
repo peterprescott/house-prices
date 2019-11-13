@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>British House Price Data &#8212; House Prices Analysis 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="british-house-price-data">
+<h1>British House Price Data<a class="headerlink" href="#british-house-price-data" title="Permalink to this headline">¶</a></h1>
+<p>A second project done as part of <a class="reference external" href="https://datacdt.org/">the Data CDT</a>’s GEOG5995M/ENVS802 module: <strong>Programming For Social Scientists</strong>.</p>
+<p>Contents: <a class="reference external" href="#intro">Intro</a>. <a class="reference external" href="#discuss">Discussion</a>. <a class="reference external" href="#uml">UML</a>. <a class="reference external" href="#tests">Tests</a>. <a class="reference external" href="#license">License</a>. <a class="reference external" href="#docs">Documentation</a>.</p>
+<p><span class="raw-html-m2r"><a name="intro"></a></span></p>
+<div class="section" id="id1">
+<h2>Intro<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/index.html">This assignment</a> required that we develop a model, application, or analysis from scratch… In particular, the project had to:</p>
+<ul class="simple">
+<li><p>Read in some data.</p></li>
+<li><p>Process it in some way.</p></li>
+<li><p>Display the results.</p></li>
+<li><p>Write the results to a file.</p></li>
+</ul>
+<p>For this project, my hope is that we will read in the <a class="reference external" href="https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads">Paid Price Data</a> from HM Land Registry, write it to a <a class="reference external" href="https://docs.python.org/3/library/sqlite3.html">SQLite</a> database, and create a <a class="reference external" href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> web app that uses Leaflet to visualize a selection of that data on a map. This should be able to run anywhere by anyone with the code, but we’ll host it on PythonAnywhere; and then we’ll try and also have an API on the PythonAnywhere site so that we can also display the Leaflet frontend on a static site.</p>
+<p><span class="raw-html-m2r"><a name="discuss"></a></span></p>
+</div>
+<div class="section" id="id2">
+<h2>Discussion<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Why are House Prices important? We could talk about the <em>Housing Crisis</em> and affordable housing…</p>
+<p><span class="raw-html-m2r"><a name="uml"></a></span></p>
+</div>
+<div class="section" id="uml-diagram">
+<h2>UML Diagram<a class="headerlink" href="#uml-diagram" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://stackoverflow.com/questions/260165/whats-the-best-way-to-generate-a-uml-diagram-from-python-source-code">StackOverflow suggests</a> that UML diagrams could be automated.</p>
+<p><span class="raw-html-m2r"><a name="tests"></a></span></p>
+</div>
+<div class="section" id="id3">
+<h2>Tests<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><em>Test-Driven Development</em> [&#64;Percival2017] requires that before actually doing anything, we run a test that will check whether what we want to do is done. We run the test before writing the desired feature, so that it fails (obviously), then we write the feature, and then the test should run successfully.</p>
+<p><span class="raw-html-m2r"><a name="license"></a></span></p>
+</div>
+<div class="section" id="id4">
+<h2>License<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Contains public sector information licensed under the <a class="reference external" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>.</p>
+<p><span class="raw-html-m2r"><a name="docs"></a></span></p>
+</div>
+<div class="section" id="id5">
+<h2>Documentation<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>This <span class="raw-html-m2r"><del>will be</del></span> is automatically generated by <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">Sphinx</a>, which I learnt to use for <a class="reference external" href="https://github.com/peterprescott/agent-based-modelling">the previous project</a>. For this to work we have to make sure we write proper docstrings. We use <a class="reference external" href="https://google.github.io/styleguide/pyguide.html#383-functions-and-methods">Google style</a>, which means we require <a class="reference external" href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html">the Napoleon extension</a> for Sphinx.</p>
+<p>Having generated it with Sphinx, we can also host the documentation freely at <a class="reference external" href="https://readthedocs.org">ReadTheDocs.org</a>.</p>
+<a class="reference external image-reference" href="https://house-prices.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/house-prices/badge/?version=latest" /></a>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">House Prices Analysis</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">house-prices</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Peter Prescott.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/README.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

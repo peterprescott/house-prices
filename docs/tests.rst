@@ -1,5 +1,8 @@
-tests module
-============
+tests package
+=============
+
+Module contents
+---------------
 
 .. automodule:: tests
    :members:
